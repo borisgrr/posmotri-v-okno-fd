@@ -1,7 +1,3 @@
-/* * {
-  outline: 1px solid red !important;
-} */
-
 *,
 *::before,
 *::after {
@@ -18,7 +14,7 @@ html {
   align-items: center;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
@@ -63,7 +59,7 @@ ol {
   flex-direction: row;
   align-items: flex-end;
   gap: 30px;
-  width: 1140px;
+  min-width: 1140px;
 }
 
 .search-form {
@@ -79,7 +75,6 @@ ol {
   flex-direction: column;
   gap: 30px;
   height: 298px;
-  overflow-x: hidden;
   overflow-y: auto;
 }
 
@@ -136,7 +131,7 @@ ol {
 .search-form__fieldset-title {
   margin-bottom: 5px;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -159,7 +154,6 @@ ol {
   display: block;
   color: #fff;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .content__video-card-title {
@@ -177,7 +171,7 @@ ol {
   display: -webkit-box;
   overflow: hidden;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 0.9;
@@ -211,6 +205,7 @@ ol {
   align-items: center;
   gap: 5px;
   width: fit-content;
+  cursor: pointer;
 }
 
 .search-form__textfield {
@@ -221,7 +216,7 @@ ol {
   border-bottom: 1px solid #fff;
   border-left: none;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   background-color: #1b1919;
@@ -246,11 +241,10 @@ ol {
   height: 19px;
   border: 1px solid #fff;
   padding: 1px;
-  cursor: pointer;
 }
 
 .search-form__pseudo-checkbox::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 100%;
@@ -274,14 +268,12 @@ ol {
   outline: 1px solid #fff;
 }
 
-.search-form__label:has(.search-form__checkbox:focus-visible) {
-  outline: 1px solid #fff;
-}
-
 .button {
+  height: 34px;
   border: 1px solid #fff;
+  padding: 6px 0;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
   background-color: #1b1919;
@@ -291,13 +283,10 @@ ol {
 .search-form__submit-button {
   align-self: flex-end;
   width: 194px;
-  height: 34px;
 }
 
 .more-button {
   width: 100%;
-  height: 100%;
-  padding: 6px 142px;
 }
 
 .button:hover {
@@ -314,10 +303,10 @@ ol {
 }
 
 .content__card-link_current {
-  background-color: #1b1919;
+  background-color: #545050;
 }
 
-.content__card-link_current:active {
+.content__card-link:active {
   background-color: #545050;
 }
 
